@@ -1,0 +1,36 @@
+.globalnav {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+
+  .globalnav__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    .globalnav__item {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      
+      .globalnav__link {
+        color: rgba(0, 0, 0, 0.8);
+        text-decoration: none;
+        font-weight: 400;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          color: rgba(0, 0, 0, 1);
+          transform: scale(1.02);
+        }
+
+        .globalnav__logo {
+          width: 38px;
+          height: 38px;
+        }
+      }
+    }
+  }
+}
